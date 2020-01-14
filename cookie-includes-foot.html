@@ -1,0 +1,23 @@
+
+    <!-- edit the path to your correct location -->
+    <script src="/path/to/file/cookie-consent.js"></script>
+
+    <!-- background colors, button colors, bar position, bar text, bar link, etc... settings -->
+    <script>
+    window.addEventListener("load", function() {
+        window.wpcc.init( {
+            "colors": {
+                "popup": {
+                    "background": "#0779bf", "text": "#ffffff", "border": "#0779bf"
+                }
+                , "button": {
+                    "background": "#0779bf", "text": "#ffffff"
+                }
+            }
+            , "position":"bottom", "margin":"none", "fontsize":"tiny", "content": {
+                "href": "https://www.ucar.edu/cookie-other-tracking-technologies-notice", "message": "UCAR uses cookies to make our website function; however, UCAR cookies do not collect personal information about you. When using our website, you may encounter embedded content, such as YouTube videos and other social media links, that use their own cookies. To learn more about third-party cookies on this website, and to set your cookie preferences, click", "link": "here", "button": "Acknowledge"
+            }
+            , "padding":"none"
+        })
+    });
+    </script>
